@@ -4,7 +4,8 @@
   "description": "Part of the Udemy node.js developer course, this is a project to learn how to use the express library in node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Luke Beach",
   "license": "ISC",

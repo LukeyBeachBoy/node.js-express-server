@@ -1,6 +1,10 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 3000; //Process = the machine running node
+//env is the same as env on cmd shell, all the system variables.
+//in this case we're setting the port to either the dynamic one OR 3000
+
 
 var app = express();
 
@@ -71,6 +75,6 @@ app.get('/bad', (req, res) => {
         error: 'Sorry, can\'t find that'
     });
 });
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
