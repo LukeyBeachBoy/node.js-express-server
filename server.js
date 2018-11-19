@@ -54,7 +54,7 @@ hbs.registerHelper('getCurrentYear', () => {
 
 hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
-})
+});
 
 app.get('/', (req, res) => {
     // res.send('<h1>Hello Express!</h1>');
@@ -73,7 +73,7 @@ app.get('/about', (req, res) => {
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
         pageTitle: 'Projects page'
-    })
+    });
 });
 
 app.get('/bad', (req, res) => {
